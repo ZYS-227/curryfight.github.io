@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+
+<head>
+
+    <!-- Required meta tags -->
+    <title>麥閣「蛇」啊！走春集章送好禮
+    </title>
+    <meta name="description" content="麥閣「蛇」啊！走春集章送好禮" />
+    <meta name="keywords" content="咖哩鬥陣" />
+    <meta name="google-site-verification" content="MB4AQqXWZI22w6JpVEOWoiOfdtXMHNiagbJWSFdlhHI" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- layout CSS -->
+    <link rel="stylesheet" href="style/layout.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <style>
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194927061-1"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-194927061-1');
+    </script>
+</head>
+
+<body>
+    <div>
+       <img class="p-block" src="images/banner_pc1.png" style="width: 100%;"></a>
+       <img class="p-block" src="images/banner_pc2.png" style="width: 100%;"></a>
+       <img class="p-block" src="images/banner_pc3.png" style="width: 100%;"></a>
+       <img class="p-block" src="images/banner_pc4.png" style="width: 100%;"></a>
+       <img class="p-block" src="images/banner_pc5.png" style="width: 100%;"></a>
+       <a href="https://maps.app.goo.gl/vLpQM7HxqFNvNXoy5"><img class="p-block" src="images/banner_pc6.png" style="width: 100%;"></a>
+       <img class="p-block" src="images/banner_pc7.png" stye="width: 100%;"></a>
+       <a href="https://maps.app.goo.gl/vLpQM7HxqFNvNXoy5"><img class="p-block" src="images/banner_pc8.png" stye="width: 100%;"></a>
+        <img class="m-block" src="images/banner_sp1.png" style="width: 100%;"></a>
+        <img class="m-block" src="images/banner_sp2.png" style="width: 100%;"></a>
+        <img class="m-block" src="images/banner_sp3.png" style="width: 100%;"></a>
+        <img class="m-block" src="images/banner_sp4.png" style="width: 100%;"></a>
+        <img class="m-block" src="images/banner_sp5.png" style="width: 100%;"></a>
+        <a href="https://maps.app.goo.gl/vLpQM7HxqFNvNXoy5"><img class="m-block" src="images/banner_sp6.png" style="width: 100%;"></a>
+        <img class="m-block" src="images/banner_sp7.png" style="width: 100%;"></a>
+        <a href="https://maps.app.goo.gl/vLpQM7HxqFNvNXoy5"><img class="m-block" src="images/banner_sp8.png" style="width: 100%;"></a>
+
+    </div>
+    <footer>
+        <!-- 頁尾 - 社群功能
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="cpr"><img src="images/cpr.svg" alt=""></div>
+                <div class="phone"><img src="images/phone2.png" alt=""></div>
+            </div>
+        </div> -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+
+            var $elem = $('.js-image-switch');
+
+            var sp = '_sp.';
+            var pc = '_pc.';
+
+            var replaceWidth = 768;
+
+            function imageSwitch() {
+
+                var windowWidth = parseInt(window.innerWidth);
+
+
+                $elem.each(function () {
+                    var $this = $(this);
+
+                    if (windowWidth >= replaceWidth) {
+                        $this.attr('src', $this.attr('src').replace(sp, pc));
+
+
+                    } else {
+                        $this.attr('src', $this.attr('src').replace(pc, sp));
+                    }
+                });
+            }
+            imageSwitch();
+
+
+            var resizeTimer;
+            $(window).on('resize', function () {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function () {
+                    imageSwitch();
+                }, 200);
+            });
+        });
+    </script>
+</body>
+
+</html>
